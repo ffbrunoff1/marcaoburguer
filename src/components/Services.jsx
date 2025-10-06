@@ -191,7 +191,7 @@ export default function Services() {
                   ease: "easeInOut" 
                 }}
                 className="absolute -inset-6 bg-gradient-to-r from-primary-200 to-accent-200 rounded-3xl blur-2xl opacity-30"
-              ></div>
+              ></motion.div>
               
               <img
                 src="https://qotdwocbcoirjlqjkjhq.supabase.co/storage/v1/object/public/imagens.website.creation/ad5c31a2-f045-4f97-a0ab-2d4f0e6a69e7/X_salada_1759773325819.png"
