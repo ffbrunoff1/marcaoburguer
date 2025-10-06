@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+
+  body {
+    @apply font-sans antialiased text-gray-900 bg-white;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary-500 to-primary-600 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:from-primary-600 hover:to-primary-700 hover:shadow-lg hover:scale-105 active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply bg-white text-primary-600 border-2 border-primary-500 px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-primary-50 hover:border-primary-600 hover:shadow-lg hover:scale-105 active:scale-95;
+  }
+
+  .btn-accent {
+    @apply bg-gradient-to-r from-accent-500 to-accent-600 text-white px-6 py-2 rounded-lg font-medium transition-all duration-300 hover:from-accent-600 hover:to-accent-700 hover:shadow-lg hover:scale-105 active:scale-95;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:scale-105 hover:-translate-y-2;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent;
+  }
+
+  .section-padding {
+    @apply py-16 sm:py-20 lg:py-24;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .hero-bg {
+    background: linear-gradient(135deg, #f97316 0%, #ea580c 50%, #dc2626 100%);
+  }
+
+  .card-shadow {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  .food-card {
+    @apply bg-white rounded-2xl overflow-hidden card-shadow card-hover border border-gray-100;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-bold text-center mb-4 text-gradient;
+  }
+
+  .section-subtitle {
+    @apply text-lg text-gray-600 text-center max-w-3xl mx-auto mb-12;
+  }
+}
+
+@layer utilities {
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
+}
