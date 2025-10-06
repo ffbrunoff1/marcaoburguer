@@ -136,7 +136,7 @@ export default function Hero() {
                   scale: { duration: 3, repeat: Infinity, ease: "easeInOut" }
                 }}
                 className="absolute -inset-4 bg-gradient-to-r from-white/20 to-secondary-300/20 rounded-full blur-xl"
-              ></div>
+              ></motion.div>
               
               <motion.img
                 src="https://qotdwocbcoirjlqjkjhq.supabase.co/storage/v1/object/public/imagens.website.creation/ad5c31a2-f045-4f97-a0ab-2d4f0e6a69e7/X_salada_1759773325819.png"
